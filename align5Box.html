@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>align 5 boxes</title>
+        <style>
+           body{
+            
+           }
+          main{        
+            min-width:500px;
+            min-height:500px;
+            border:2px solid brown;
+            display : flex;
+            flex-direction: column;
+          }
+
+          .box{
+            width: 150px;
+            height:150px;
+            border: 2px solid red;
+          }
+          .row1 {
+            display:flex;
+            flex-direction: row;
+            flex:50%;
+            justify-content: space-between;
+            align-items: flex-start;
+         
+          }
+          .row2{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            
+          }
+          .row3{
+            display:flex;
+            flex-direction: row;
+            flex:50%;
+            justify-content: space-between;
+          }
+          
+          
+
+
+        </style>
+    </head>
+    <body>
+       <main>
+            <div class="row1 "> 
+                    <div class="box  ">
+
+                    </div>
+           
+                    <div class="box ">
+
+                    </div>
+            </div>
+            <div  class="row2">
+                <div class="box ">
+
+                </div>
+            </div>
+            <div class="row3">
+                    <div class="box "></div>
+
+           
+
+                <div class="box ">
+
+                </div>
+            </div>
+       </main>
+            
+            
+    </body>
+</html> 

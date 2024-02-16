@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Layout</title>
+        <style>
+           body{
+            display : flex;
+            flex-direction: column;
+            flex-wrap: no wrap;
+            width :inherit;
+            height:100%;
+           }
+           header{
+            border : 2px solid brown;
+            min-width :inherit;
+            min-height:50px;
+           }
+           main{
+            display:flex;
+            flex-direction: row;
+            min-width :500px;
+            min-height:400px;
+            border:2px solid purple;
+            margin : 10px;
+           
+           
+            
+           }
+           
+           nav{
+           display :flex; 
+            border : 1px solid black;
+            height:70px;
+            margin:2px;
+            flex: 0 30px;
+            justify-content:flex-start;
+            align-items: flex-start;
+           }
+           article{
+            display: flex !important;
+            border : 1px solid black;
+            height:70px;
+            margin:2px;
+            justify-content:center;
+            align-items: center;
+            
+           }
+           aside{
+            display: flex !important;
+            border : 1px solid black;
+            height:70px;
+            margin:2px;
+            justify-content:flex-end;
+            align-items: flex-start;
+        
+
+           }
+           .orderChng{
+            display: flex !important;
+            border : 1px solid black;
+            height:70px;
+            margin:2px;
+           }
+
+           .LeftBox{
+            justify-content:flex-start;
+            align-items: flex-end;
+           }
+           .RightBox{
+            justify-content:flex-end;
+            align-items: flex-end;
+           }
+
+           footer{
+            border : 2px solid brown;
+            min-width :inherit;
+            min-height:50px;
+           }
+
+           /* .item1{
+            order: 2
+           }
+           .item2{
+            order: 0;
+           }
+           .item3{
+            order:-1;
+           }
+           .item4{
+            order: -2
+           } */
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header</h1>
+        </header>
+        <main>
+            
+                    
+               <nav class="main-item item1">
+                     <h2>Navigation</h2>
+               </nav> 
+               <article class="main-item item2">
+                        <h2>Main Content</h2>
+               </article>
+               <aside class="main-item item3">
+                    <h2>SideBar</h2>
+               </aside>
+               <div class="orderChng LeftBox item4">
+                    <h2>box left bottom</h2>
+               </div>
+               <div class="orderChng RightBox item4">
+                <h2>box right bottom</h2>
+           </div>
+
+
+        
+            </main>
+            <footer>
+                <h2>Footer</h2>
+            </footer> 
+            
+    </body>
+</html> 
