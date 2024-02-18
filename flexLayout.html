@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Simple Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <style>
+        .hero{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(//unsplash.it/1000/600);
+            background-size: cover;
+            height: 60vh;
+            background-blend-mode: multiply;
+            opacity: 0.5;
+            color:black;
+            font-weight:bold;
+            margin:2px;
+        }
+        h1{
+            font-size: 5rem;
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+            outline: 3px solid white;
+            height: max-content;
+        }
+        .salesec{
+            display:flex;
+            justify-content: space-around;
+            margin-top:2vw;
+            margin-bottom:2vw;
+           
+        }
+        .salesPoint{
+           text-align: center;
+           outline:2px solid black;
+           flex-basis:30%;
+
+        }
+        @media (max-width:50rem){
+            .salesec{
+                display:flex;
+                flex-direction:column;
+            justify-content: space-around;
+            margin-top:2vw;
+            margin-bottom:2vw;
+            }       
+         }
+.cta {
+  background-image: url(//unsplash.it/600/400);
+  background-size: cover;
+  padding: 10vh 0;
+  
+}
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <p>Things are <span>awesome</span> here at</p>
+         <h1>Awesome<span>Co</span></h1>
+         <p>We <strong>Design</strong> and <strong>Develope Awesome</strong> stuff</p>
+    </section>
+    <section class="salesec">
+        <div class="salesPoint">
+            <h3>Sales point 1</h3>
+            <p>mosfhdh fdhdshsdg hdhdsghsd dhdghdgh dhsdghdsgh</p>
+        </div>
+        <div class="salesPoint">
+            <h3>Sales point 2</h3>
+            <p>mosfhdh fdhdshsdg hdhdsghsd dhdghdgh dhsdghdsgh</p>
+        </div>
+        <div class="salesPoint">
+            <h3>Sales point 2</h3>
+            <p>mosfhdh fdhdshsdg hdhdsghsd dhdghdgh dhsdghdsgh</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Call to Action</h2>
+        <p>Sed Locus leo,auctor nj Manmadan Ambu 
+            (transl. Cupid's Arrow)[3] is a 2010 Indian Tamil-language
+             romantic comedy film directed by K. S. Ravikumar and written by Kamal Haasan. 
+             The film stars himself, Trisha and R. Madhavan in the title roles, while featuring Sangeetha, 
+             Oviya, Ramesh Aravind, Usha Uthup, Manju Pillai and Urvashi among others in 
+             supporting roles.[4] The film features music composed by Devi Sri Prasad,
+            with several songs written and sung by Kamal Haasan himself, while Manush Nandan and 
+            Shan Mohammed made their debuts as cinematographer and editor.</p>
+    </section>
+</body>
+
+</html>
